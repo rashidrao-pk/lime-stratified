@@ -141,6 +141,7 @@ class LimeBase(object):
                                    label,
                                    num_features,
                                    feature_selection='auto',
+                                   weight_adjustments=None,
                                    model_regressor=None):
         """Takes perturbed data, labels and distances, returns explanation.
 
@@ -163,6 +164,8 @@ class LimeBase(object):
                 'none': uses all features, ignores num_features
                 'auto': uses forward_selection if num_features <= 6, and
                     'highest_weights' otherwise.
+            weight_adjustments: weights adjustment factors for the data points.
+                These factors are multiplied with the weights from the distance kernel.
             model_regressor: sklearn regressor to use in explanation.
                 Defaults to Ridge regression if None. Must have
                 model_regressor.coef_ and 'sample_weight' as a parameter
@@ -178,6 +181,8 @@ class LimeBase(object):
             local_pred is the prediction of the explanation model on the original instance
         """
 
+        if weight_adjustments is not None:
+            distances *= weight_adjustments
         weights = self.kernel_fn(distances)
         labels_column = neighborhood_labels[:, label]
         used_features = self.feature_selection(neighborhood_data,
