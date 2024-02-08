@@ -1,4 +1,4 @@
-<!--
+
 # experiments with lime
 
 This repository contains the changes needed to add the stratified sampling strategy to the original codebase of LIME.
@@ -13,8 +13,6 @@ explanation = lime_explainer.explain_instance(image_to_explain, blackbox_model,
 ```
 
 The remaining part of this readme is the original redme file of LIME.
----
--->
 
 # lime
 
