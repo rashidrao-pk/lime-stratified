@@ -1,8 +1,11 @@
 
-# experiments with lime
+<h1> Using Stratified Sampling to Improve LIME Image Explanations </h1>
 
-This repository contains the changes needed to add the stratified sampling strategy to the original codebase of LIME.
-The class `LimeImageExplainer` adds a single parameter `use_stratification` to the `explain_instance` method. When the parameter is False, the code behaves exactly like the original LIME implementation. When `use_stratification=True` the algorithm *StratifiedSampling* is used, as described in the paper.
+- This repository contains the changes needed to add the stratified sampling strategy to the original codebase of LIME proposed for the Research Article <a href='https://doi.org/10.1609/aaai.v38i13.29397'>'<b>Using Stratified Sampling to Improve LIME Image Explanations</b>'.</a> 
+
+- The rest of Experiments for the proposed strategy are uploaded here at <b><a href='https://github.com/rashidrao-pk/lime-stratified-examples'> LIME Stratified Examples </a></b>
+
+- The class `LimeImageExplainer` adds a single parameter `use_stratification` to the `explain_instance` method. When the parameter is False, the code behaves exactly like the original LIME implementation. When `use_stratification=True` the algorithm *StratifiedSampling* is used, as described in the paper.
 
 ```
 # Code example
@@ -12,6 +15,12 @@ explanation = lime_explainer.explain_instance(image_to_explain, blackbox_model,
                                               use_stratification=True)
 ```
 
+# Cite
+If you use our proposed strategy, please cite us: <br>
+``` 
+Rashid, M., Amparore, E. G., Ferrari, E., & Verda, D. (2024). Using Stratified Sampling to Improve LIME Image Explanations. Proceedings of the AAAI Conference on Artificial Intelligence, 38(13), 14785-14792. https://doi.org/10.1609/aaai.v38i13.29397 
+```
+<br>
 The remaining part of this readme is the original redme file of LIME.
 
 # lime
