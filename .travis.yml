@@ -1,16 +1,22 @@
-dist: xenial
-sudo: false
-language: python
-cache: pip
-python:
-  - "3.6"
-  - "3.7"
-# command to install dependencies
-install:
-  - pip install git+https://github.com/rashidrao-pk/lime_stratified.git
-# command to run tests
-
-language: ruby
-rvm:
-- 2.2
-- jruby
+{
+  "language": "ruby",
+  "os": [
+    "linux"
+  ],
+  "dist": "xenial",
+  "sudo": false,
+  "cache": {
+    "pip": true
+  },
+  "python": [
+    "3.6",
+    "3.7"
+  ],
+  "install": [
+    "pip install git+https://github.com/rashidrao-pk/lime_stratified.git"
+  ],
+  "rvm": [
+    "2.2",
+    "jruby"
+  ]
+}
