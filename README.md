@@ -6,11 +6,21 @@
 
 - The rest of Experiments for the proposed strategy are uploaded here at <b><a href='https://github.com/rashidrao-pk/lime-stratified-examples'> LIME Stratified Examples </a></b>
 
+#### How to Install Lime_Stratified?
+
+```
+git clone https://github.com/rashidrao-pk/lime_stratified
+cd lime_stratified
+python setup.py install
+```
+#### How to use ?
+
 - The class `LimeImageExplainer` adds a single parameter `use_stratification` to the `explain_instance` method. When the parameter is False, the code behaves exactly like the original LIME implementation. When `use_stratification=True` the algorithm *StratifiedSampling* is used, as described in the paper.
 
 ```
 # Code example
-lime_explainer = LimeImageExplainer()
+from lime import lime_image
+lime_explainer = lime_image.LimeImageExplainer(random_state=1234)
 explanation = lime_explainer.explain_instance(image_to_explain, blackbox_model,
                                               ...
                                               use_stratification=True)
