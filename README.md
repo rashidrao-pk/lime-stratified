@@ -8,8 +8,12 @@
 
 ## Installation
 
-The lime_stratified package is on Github, Simply run:
+The lime_stratified package is on **[PyPI](https://pypi.org/project/lime-stratified/)**, Simply run:
 
+```sh
+pip install lime_stratified
+```
+alternatively, it can also be installed using:
 ```sh
 pip install git+https://github.com/rashidrao-pk/lime_stratified.git
 ```
@@ -42,7 +46,15 @@ explanation = lime_explainer.explain_instance(image_to_explain,
 # Cite
 If you use our proposed strategy, please cite us: <br>
 ``` 
-Rashid, M., Amparore, E. G., Ferrari, E., & Verda, D. (2024). Using Stratified Sampling to Improve LIME Image Explanations. Proceedings of the AAAI Conference on Artificial Intelligence, 38(13), 14785-14792. https://doi.org/10.1609/aaai.v38i13.29397 
+@inproceedings{rashid2024using,
+  title={Using Stratified Sampling to Improve LIME Image Explanations},
+  author={Rashid, Muhammad and Amparore, Elvio G and Ferrari, Enrico and Verda, Damiano},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={13},
+  pages={14785--14792},
+  year={2024}
+}
 ```
 <br>
 The remaining part of this readme is the original redme file of LIME.
