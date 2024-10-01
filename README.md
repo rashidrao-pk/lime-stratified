@@ -6,7 +6,7 @@
         <a href="https://pypi.python.org/pypi/lime_stratified"><img alt="Python versions" src="https://img.shields.io/badge/python-3.6%2B%20%7C%20PyPy-blue.svg"></a>
         <a href="https://loguru.readthedocs.io/en/stable/index.html"><img alt="Documentation" src="https://img.shields.io/readthedocs/loguru.svg"></a>
         <a href="https://github.com/Delgan/loguru/actions/workflows/tests.yml?query=branch:master"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/Delgan/loguru/tests.yml?branch=master"></a>
-        <a href="https://codecov.io/gh/delgan/loguru/branch/master"><img alt="Coverage" src="https://img.shields.io/codecov/c/github/delgan/loguru/master.svg"></a>
+        <a href="https://app.codecov.io/github/rashidrao-pk"><img alt="Coverage" src="https://codecov.io/github/rashidrao-pk/lime_stratified/graph/badge.svg?token=J7PL6Q1SNW)](https://codecov.io/github/rashidrao-pk/lime_stratified"></a>
         <a href="https://app.codacy.com/gh/rashidrao-pk/lime_stratified/dashboard"><img alt="Code quality" src="https://app.codacy.com/project/badge/Grade/ae3c750abf744da6b0ca4ea75dc623fc"></a>
         <a href="https://github/rashidrao-pk/lime_stratified/LICENSE"><img alt="License" src="https://img.shields.io/github/license/rashidrao-pk/lime_stratified"></a>
     </p>
