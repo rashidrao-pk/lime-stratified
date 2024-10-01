@@ -1,0 +1,32 @@
+[project]
+name = "lime_stratified"
+version = "0.0.1"
+authors = [
+  { name="Muhammad Rashid", email="rashidunito@gmail.com" },
+
+]
+license = { text = "MIT" }
+
+description = "Using Stratified Sampling to Improve LIME Image Explanations"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "scipy",
+    "tqdm>=4.29.1",
+    "scikit-learn>=0.18",
+    "scikit-image>=0.12",
+    "pyDOE2==1.3.0"
+]
+
+dynamic = ["optional-dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/rashidrao-pk/lime_stratified"
+Issues = "https://github.com/rashidrao-pk/lime_stratified/issues"
