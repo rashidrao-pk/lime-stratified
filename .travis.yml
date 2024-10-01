@@ -13,3 +13,8 @@ install:
 script:
   - pytest lime
   - flake8 lime
+
+language: ruby
+rvm:
+- 2.2
+- jruby
