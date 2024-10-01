@@ -62,6 +62,7 @@ The remaining part of this readme is the original redme file of LIME.
 # LIME_Stratified
 
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a3ad4c47796844059d5cb7fc3d80de4b)](https://app.codacy.com/gh/rashidrao-pk/lime_stratified?utm_source=github.com&utm_medium=referral&utm_content=rashidrao-pk/lime_stratified&utm_campaign=Badge_Grade)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rashidrao-pk/lime_stratified/HEAD)
 
 
