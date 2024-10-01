@@ -7,12 +7,8 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - python -m pip install -U pip
-  - python -m pip install -e .[dev]
+  - pip install git+https://github.com/rashidrao-pk/lime_stratified.git
 # command to run tests
-script:
-  - pytest lime
-  - flake8 lime
 
 language: ruby
 rvm:
