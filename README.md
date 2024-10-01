@@ -1,6 +1,7 @@
 
 <h1> Using Stratified Sampling to Improve LIME Image Explanations </h1>
 
+
 - This repository contains the changes needed to add the stratified sampling strategy to the original codebase of LIME proposed for the Research Article <a href='https://doi.org/10.1609/aaai.v38i13.29397'>'<b>Using Stratified Sampling to Improve LIME Image Explanations</b>'. </a>  published at <a href='https://ojs.aaai.org/index.php/AAAI/index'> Proceedings of the AAAI Conference on Artificial Intelligence. </a>
 
 - The rest of Experiments for the proposed strategy are uploaded here at <b><a href='https://github.com/rashidrao-pk/lime-stratified-examples'> LIME Stratified Examples </a></b>
@@ -14,6 +15,10 @@ explanation = lime_explainer.explain_instance(image_to_explain, blackbox_model,
                                               ...
                                               use_stratification=True)
 ```
+
+## Paper PDF:
+**Using Stratified Sampling to Improve LIME Image Explanations** can be found at [LINK](https://ojs.aaai.org/index.php/AAAI/article/view/29397) and also on <a href=''> <a href = 'https://arxiv.org/abs/2403.17742'> <img src="https://cdn.jsdelivr.net/gh/DmitryRyumin/NewEraAI-Papers@main/images/arxiv-logo.svg" width="45" alt="" /> </a>
+</a>.
 
 # Cite
 If you use our proposed strategy, please cite us: <br>
@@ -43,7 +48,7 @@ Lime is able to explain any black box classifier, with two or more classes. All 
 The lime package is on [PyPI](https://pypi.python.org/pypi/lime). Simply run:
 
 ```sh
-pip install lime
+pip install git+https://github.com/rashidrao-pk/lime_stratified.git
 ```
 
 Or clone the repository and run:
@@ -54,27 +59,6 @@ pip install .
 
 We dropped python2 support in `0.2.0`, `0.1.1.37` was the last version before that.
 
-## Screenshots
-
-Below are some screenshots of lime explanations. These are generated in html, and can be easily produced and embedded in ipython notebooks. We also support visualizations using matplotlib, although they don't look as nice as these ones.
-
-#### Two class case, text
-
-Negative (blue) words indicate atheism, while positive (orange) words indicate christian. The way to interpret the weights by applying them to the prediction probabilities. For example, if we remove the words Host and NNTP from the document, we expect the classifier to predict atheism with probability 0.58 - 0.14 - 0.11 = 0.31.
-
-![twoclass](doc/images/twoclass.png)
-
-#### Multiclass case
-
-![multiclass](doc/images/multiclass.png)
-
-#### Tabular data
-
-![tabular](doc/images/tabular.png)
-
-#### Images (explaining prediction of 'Cat' in pros and cons)
-
-<img src="https://raw.githubusercontent.com/marcotcr/lime/master/doc/images/images.png" width=200 />
 
 ## Tutorials and API
 
@@ -119,7 +103,11 @@ The bright red cross is the instance being explained (let's call it X).
 We sample instances around X, and weight them according to their proximity to X (weight here is indicated by size).
 We then learn a linear model (dashed line) that approximates the model well in the vicinity of X, but not necessarily globally. For more information, [read our paper](https://arxiv.org/abs/1602.04938), or take a look at [this blog post](https://www.oreilly.com/learning/introduction-to-local-interpretable-model-agnostic-explanations-lime).
 
-<img src="https://raw.githubusercontent.com/marcotcr/lime/master/doc/images/lime.png" width=300px />
+
+### How LIME_Image Works?
+<img src="doc/images/LIME-Image-workflow.png"/>
+
+
 
 ## Contributing
 
