@@ -1,8 +1,13 @@
 from setuptools import setup, find_packages
+import some_build_toolkit
+
+def get_version():
+    version = some_build_toolkit.compute_version()
+    return version
 
 setup(
     name='lime_stratified',
-    version='0.1',
+    version=get_version(),
     description='Using Stratified Sampling to Improve LIME Image Explanations',
     url='https://github.com/rashidrao-pk/lime_stratified',
     author='Muhammad Rashid',
