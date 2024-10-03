@@ -1,0 +1,8 @@
+name: lime_stratified
+channels:
+  - defaults
+dependencies:
+  - python=3.8  # or your preferred version
+  - pip
+  - pip:
+      - lime_stratified  # add other required packages here

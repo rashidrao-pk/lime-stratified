@@ -5,7 +5,7 @@ authors = [
   { name="Muhammad Rashid", email="rashidunito@gmail.com" },
 
 ]
-license = { text = "MIT" }
+license = { text = "BSD-2-Clause" }
 
 description = "Using Stratified Sampling to Improve LIME Image Explanations"
 readme = "README.md"

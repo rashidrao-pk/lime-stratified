@@ -14,7 +14,8 @@ pd.set_option('display.max_columns', None)
 from skimage.segmentation import mark_boundaries
 from matplotlib.colors import LinearSegmentedColormap
 
-from lime_stratified.lime.wrappers.scikit_image import SegmentationAlgorithm
+# from lime_stratified.lime.wrappers.scikit_image import SegmentationAlgorithm
+from lime.wrappers.scikit_image import SegmentationAlgorithm
 display(HTML("<style>.container { width:98% !important; }</style>"))
 from tensorflow.keras.applications.resnet50 import ResNet50,preprocess_input
 model = ResNet50(weights='imagenet')
