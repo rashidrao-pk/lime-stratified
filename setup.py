@@ -20,7 +20,7 @@ setup(
         'numpy>=1.16,<2.0',
         'scipy>=1.2,<2.0',
         'tqdm>=4.29.1,<5.0',
-        'scikit-learn>=0.18,<1.0',
+        'scikit-learn>=0.18,<2.0',
         'scikit-image>=0.12,<1.0',
         'pyDOE2==1.3.0'
     ],
