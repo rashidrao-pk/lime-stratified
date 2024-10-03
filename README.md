@@ -1,6 +1,6 @@
 
 <h1> Using Stratified Sampling to Improve LIME Image Explanations </h1>
-
+<center> <img src='doc/images/LIME_Stratified.png' width=30%> </center>
 <p align="center">
         <a href="https://pypi.python.org/pypi/lime_stratified"><img alt="Pypi version" src="https://img.shields.io/pypi/v/lime_stratified"></a>
         <a href="https://pypi.python.org/pypi/lime_stratified"><img alt="Python versions" src="https://img.shields.io/badge/python-3.6%2B%20%7C%20PyPy-blue.svg"></a>
@@ -127,6 +127,7 @@ The API reference is available [here](https://lime-ml.readthedocs.io/en/latest/)
 <img src="doc/images/LIME-Image-workflow.png"/>
 
 
+Documentation
 
 ## Contributing
 
