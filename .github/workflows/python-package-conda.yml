@@ -1,19 +1,38 @@
-name: CI
+name: Python Package Conda CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      # Step 1: Checkout the repository
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Conda
+      # Step 2: Set up Miniconda
+      - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v2
         with:
           auto-update-conda: true
-          environment-file: .github/workflows/environment.yml  # adjust this path if necessary
+          python-version: 3.8  # Specify the Python version you need
+          environment-file: github/workflows/environment.yml  # Specify the path to your environment.yml
+          activate-environment: base
 
+      # Step 3: Install additional dependencies
       - name: Install dependencies
-        run: conda env update --file .github/workflows/environment.yml --name base
+        run: |
+          conda env update --file github/workflows/environment.yml --name base
+          conda install pytest  # or any other testing framework
+
+      # Step 4: Run tests
+      - name: Run tests
+        run: |
+          pytest  # Replace with your test command
