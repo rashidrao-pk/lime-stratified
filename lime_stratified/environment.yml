@@ -19,4 +19,4 @@ jobs:
           auto-update-conda: true
 
       - name: Install dependencies
-        run: conda env update --file ./environment.yml --name base
+        run: conda env update --file .github/workflows/environment.yml --name base
