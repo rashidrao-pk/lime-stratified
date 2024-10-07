@@ -9,4 +9,4 @@ dependencies:
   - pytest
   - pip
   - pip:
-      - lime_stratified  # Add pip packages here
+      - lime  # Add pip packages here
